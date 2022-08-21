@@ -6,7 +6,7 @@ function Game() {
     const [gameTime, setGameTime] = useState({});
   
     useEffect(() => {
-      console.log("Welcome");
+      console.log({gameTime});
     }, [gameTime]);
   
     useEffect(() => {
