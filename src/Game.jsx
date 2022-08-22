@@ -1,5 +1,5 @@
 import { useState,useEffect } from "react";
-import Desk from './Desk'
+
 
 
 function Game() {
@@ -41,7 +41,7 @@ function Game() {
             Check Time
           </button>
         </div>
-        <Desk/>
+        
       </div>
     );
   }
