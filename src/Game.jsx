@@ -1,4 +1,5 @@
 import { useState,useEffect } from "react";
+import Desk from './Desk'
 
 
 function Game() {
@@ -6,7 +7,7 @@ function Game() {
     const [gameTime, setGameTime] = useState({});
   
     useEffect(() => {
-      console.log({gameTime});
+      console.log('welcome');
     }, [gameTime]);
   
     useEffect(() => {
@@ -16,6 +17,14 @@ function Game() {
     useEffect(() => {
       console.log("Level Up");
     }, [level]);
+
+    useEffect(() => {
+    console.log({gameTime});
+     }, [gameTime]);
+
+     useEffect(()=>{
+        alert("games")
+     },[gameTime])
   
     return (
       <div className="game">
@@ -32,6 +41,7 @@ function Game() {
             Check Time
           </button>
         </div>
+        <Desk/>
       </div>
     );
   }
